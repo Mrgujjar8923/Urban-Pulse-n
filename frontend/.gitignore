@@ -15,5 +15,4 @@ dist-ssr
 *.local.ts
 .env.development.local
 .env.local
-demo-credentials.local.json
 
