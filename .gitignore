@@ -1,3 +1,14 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Production builds & dist
+dist/
+dist-ssr/
+frontend/dist/
+build/
+
 # Environment & secret configurations
 .env
 .env.*
@@ -14,7 +25,21 @@ frontend/.env.development.local
 demo-credentials.local.json
 backend/demo-credentials.local.json
 backend/config/demo-credentials.local.json
+backend/password-hashes-backup-*.local.json
 
-# Evidence uploads
+# Database backups & dumps
+backups/
+backend/backups/
+
+# Evidence uploads & media
 uploads/
 backend/uploads/
+
+# Temporary directories, scratch scripts & system logs
+*.log
+logs/
+libpod/
+scratch/
+.codex
+.DS_Store
+Thumbs.db
