@@ -1,4 +1,9 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "";
+const resolveApiBase = () => {
+  const raw = (import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || "").trim();
+  return raw.replace(/\/+$/, "").replace(/\/api$/, "");
+};
+
+const API_BASE = resolveApiBase();
 
 type UnauthorizedCallback = () => void;
 let unauthorizedCallback: UnauthorizedCallback | null = null;
