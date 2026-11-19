@@ -7,6 +7,7 @@ const defaultOrigins = [
   "http://127.0.0.1:8080",
   "http://127.0.0.1:5173",
   "http://127.0.0.1:8081",
+  "https://urban-pulse-n.onrender.com",
 ];
 
 const envOriginSources = [
@@ -20,9 +21,13 @@ const configuredOrigins = envOriginSources
       .split(",")
       .map((origin) => origin.trim().replace(/\/+$/, ""))
       .filter(Boolean)
-  : defaultOrigins;
+  : [];
 
-export const allowedOrigins = Array.from(new Set([...defaultOrigins, ...configuredOrigins]));
+const normalizedDefaults = defaultOrigins
+  .map((origin) => origin.trim().replace(/\/+$/, ""))
+  .filter(Boolean);
+
+export const allowedOrigins = Array.from(new Set([...normalizedDefaults, ...configuredOrigins]));
 
 export const isAllowedOrigin = (origin) => {
   if (!origin) return true;
