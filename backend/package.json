@@ -1,0 +1,45 @@
+{
+  "name": "complaint-governance-backend",
+  "version": "1.0.0",
+  "description": "Production-ready backend for AI-driven Complaint Governance System",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js src/server.js",
+    "start": "node src/server.js",
+    "lint": "eslint .",
+    "test": "node --test test",
+    "test:e2e": "node scripts/run_phase6a_e2e_integration_test.mjs",
+    "seed:demo": "node src/seed/seedAdmin.js",
+    "migrate:indexes": "node scripts/migrate_production_indexes.mjs --dry-run"
+  },
+  "keywords": [
+    "complaints",
+    "governance",
+    "express",
+    "mongoose",
+    "jwt"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.7.4",
+    "express-validator": "^7.0.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.5.0",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.1.7"
+  }
+}

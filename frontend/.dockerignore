@@ -1,0 +1,29 @@
+# ==============================================================================
+# GovAI Resolve — Frontend Docker Ignore
+# Excludes local secrets, host node_modules, build artifacts, and dev scripts
+# ==============================================================================
+
+# Local environment files
+.env
+.env.*
+.env.development.local
+
+# Dependencies and build outputs (built fresh inside container)
+node_modules
+dist
+npm-debug.log*
+bun.lock
+
+# Development and helper scripts
+fix_*.py
+revert_*.py
+
+# Git and project metadata
+.git
+.gitignore
+.codex
+*.tsbuildinfo
+
+# OS artifacts
+.DS_Store
+Thumbs.db

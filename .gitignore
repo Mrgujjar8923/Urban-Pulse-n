@@ -1,0 +1,20 @@
+# Environment & secret configurations
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+frontend/.env.development.local
+*.local
+*.local.json
+demo-credentials.local.json
+backend/demo-credentials.local.json
+backend/config/demo-credentials.local.json
+
+# Evidence uploads
+uploads/
+backend/uploads/

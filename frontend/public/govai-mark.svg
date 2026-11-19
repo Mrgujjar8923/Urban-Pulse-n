@@ -1,0 +1,11 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="govai-bg" x1="32" y1="24" x2="224" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="64" fill="url(#govai-bg)"/>
+  <path d="M124 74C105 74 91 87 91 106V150C91 169 106 182 125 182H154C170 182 184 169 184 153V146H153V164H126C115 164 109 158 109 148V108C109 98 115 92 126 92H154V110H184V103C184 86 171 74 154 74H124Z" fill="white"/>
+  <path d="M194 182L173 120H157L136 182H154L157 171H173L176 182H194ZM169 155H161L165 140L169 155Z" fill="#E0F2FE"/>
+</svg>

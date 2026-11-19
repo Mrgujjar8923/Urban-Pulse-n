@@ -1,0 +1,28 @@
+# ==============================================================================
+# GovAI Resolve — Root Docker Ignore
+# ==============================================================================
+
+# Sensitive credentials and local env
+.env
+.env.*
+*.local.json
+backend/.env
+backend/.env.*
+frontend/.env*
+
+# Node dependencies and build artifacts
+node_modules
+backend/node_modules
+frontend/node_modules
+frontend/dist
+
+# Persistent storage and backups
+backend/uploads
+backend/backups
+
+# Scratch and repo metadata
+scratch/
+*.log
+.git
+.gitignore
+.codex

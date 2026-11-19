@@ -1,0 +1,177 @@
+{
+  "transactionCommitted": true,
+  "transactionError": null,
+  "operationResults": [
+    {
+      "collection": "users",
+      "id": "69e08213f55981d3faedf6c5",
+      "email": "authority@demo.com",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "authority",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "69e08219f55981d3faedf6cb",
+      "email": "water@demo.com",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "authority",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "69e0821cf55981d3faedf6ce",
+      "email": "electricity@demo.com",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "authority",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "69e0821ff55981d3faedf6d1",
+      "email": "environment@demo.com",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "authority",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "6ae19e3e0febcd3d2bd50545",
+      "email": "road.demo@govai.gov",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "officer",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "6ae19e3e0febcd3d2bd5054b",
+      "email": "electricity.demo@govai.gov",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "officer",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "users",
+      "id": "6ae19e3e0febcd3d2bd5054e",
+      "email": "environment.demo@govai.gov",
+      "field": "departmentRole",
+      "before": "<absent>",
+      "after": "officer",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "members",
+      "id": "69e08221f55981d3faedf6d5",
+      "name": "Officer Priya",
+      "field": "userId",
+      "before": "<absent>",
+      "after": "6ae19e3e0febcd3d2bd50545",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    },
+    {
+      "collection": "members",
+      "id": "69e08223f55981d3faedf6db",
+      "name": "Officer Amit",
+      "field": "userId",
+      "before": "<absent>",
+      "after": "6ae19e3e0febcd3d2bd5054b",
+      "matchedCount": 1,
+      "modifiedCount": 1
+    }
+  ],
+  "independentVerification": {
+    "checkedAt": "2026-10-30T15:27:32.706Z",
+    "userChecks": [
+      {
+        "email": "authority@demo.com",
+        "id": "69e08213f55981d3faedf6c5",
+        "departmentRole": "authority",
+        "ok": true
+      },
+      {
+        "email": "water@demo.com",
+        "id": "69e08219f55981d3faedf6cb",
+        "departmentRole": "authority",
+        "ok": true
+      },
+      {
+        "email": "electricity@demo.com",
+        "id": "69e0821cf55981d3faedf6ce",
+        "departmentRole": "authority",
+        "ok": true
+      },
+      {
+        "email": "environment@demo.com",
+        "id": "69e0821ff55981d3faedf6d1",
+        "departmentRole": "authority",
+        "ok": true
+      },
+      {
+        "email": "road.demo@govai.gov",
+        "id": "6ae19e3e0febcd3d2bd50545",
+        "departmentRole": "officer",
+        "ok": true
+      },
+      {
+        "email": "electricity.demo@govai.gov",
+        "id": "6ae19e3e0febcd3d2bd5054b",
+        "departmentRole": "officer",
+        "ok": true
+      },
+      {
+        "email": "environment.demo@govai.gov",
+        "id": "6ae19e3e0febcd3d2bd5054e",
+        "departmentRole": "officer",
+        "ok": true
+      }
+    ],
+    "memberChecks": [
+      {
+        "name": "Officer Priya",
+        "id": "69e08221f55981d3faedf6d5",
+        "userId": "6ae19e3e0febcd3d2bd50545",
+        "ok": true
+      },
+      {
+        "name": "Officer Amit",
+        "id": "69e08223f55981d3faedf6db",
+        "userId": "6ae19e3e0febcd3d2bd5054b",
+        "ok": true
+      }
+    ],
+    "deferred": {
+      "waterAccountStillOfficer": true,
+      "waterUserUnlinked": true,
+      "rajeshStillUnlinked": true,
+      "environmentAccountStillOfficer": true,
+      "environmentUserUnlinked": true,
+      "environmentMemberUnlinked": true,
+      "roadExcludedUnchanged": true,
+      "malformedExcludedUnchanged": true
+    },
+    "counts": {
+      "users": 21,
+      "members": 4,
+      "complaints": 18,
+      "feedbacks": 0,
+      "notifications": 14
+    },
+    "allNineUpdatesVerified": true,
+    "allCountsMatch": true,
+    "deferredConstraintsPass": true
+  }
+}

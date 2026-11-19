@@ -1,0 +1,40 @@
+# ==============================================================================
+# GovAI Resolve — Backend Docker Ignore
+# Excludes local secrets, host node_modules, uploads, and non-production files
+# ==============================================================================
+
+# Local environment files and sensitive credentials
+.env
+.env.*
+*.local.json
+password-hashes-backup-*.json
+
+# Dependencies and build caches (installed clean inside container via npm ci)
+node_modules
+npm-debug.log*
+
+# Evidence uploads and backups (mounted via persistent volume in production)
+uploads/
+backups/
+
+# Git and metadata
+.git
+.gitignore
+.codex
+
+# Test suites and development scratch files
+test/
+scratch/
+coverage/
+
+# Development and admin password maintenance scripts (keep only migrate_production_indexes.mjs)
+scripts/reset_admin_password.mjs
+scripts/restore_local_demo_db.mjs
+scripts/run_*.mjs
+scripts/test_*.mjs
+scripts/update_demo_passwords.mjs
+scripts/verify_*.mjs
+
+# OS artifacts
+.DS_Store
+Thumbs.db
